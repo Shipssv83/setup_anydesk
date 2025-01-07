@@ -17,16 +17,16 @@ check_root() {
     fi
 }
 
-# Установка AnyDesk
-install_anydesk() {
-    echo "📥 Установка AnyDesk..."
-    wget https://download.anydesk.com/linux/anydesk_6.3.0-1_amd64.deb -O /tmp/anydesk.deb
-    apt install -y /tmp/anydesk.deb
-    apt install -f -y
-    systemctl enable anydesk
-    systemctl start anydesk
-    echo "✅ AnyDesk установлен и запущен."
-}
+## Установка AnyDesk
+#install_anydesk() {
+#    echo "📥 Установка AnyDesk..."
+#    wget https://download.anydesk.com/linux/anydesk_6.3.0-1_amd64.deb -O /tmp/anydesk.deb
+#    apt install -y /tmp/anydesk.deb
+#    apt install -f -y
+#    systemctl enable anydesk
+#    systemctl start anydesk
+#    echo "✅ AnyDesk установлен и запущен."
+#}
 
 # Отключение Wayland и включение автологина
 configure_gdm() {
@@ -52,15 +52,15 @@ configure_display_access() {
     echo "✅ Доступ к экрану разрешен."
 }
 
-# Открытие портов для AnyDesk
-configure_firewall() {
-    echo "🛡️ Настройка брандмауэра..."
-    ufw allow 7070
-    ufw allow 80
-    ufw allow 443
-    ufw reload
-    echo "✅ Порты для AnyDesk открыты."
-}
+## Открытие портов для AnyDesk
+#configure_firewall() {
+#    echo "🛡️ Настройка брандмауэра..."
+#    ufw allow 7070
+#    ufw allow 80
+#    ufw allow 443
+#    ufw reload
+#    echo "✅ Порты для AnyDesk открыты."
+#}
 
 # Перезагрузка системы
 reboot_system() {
@@ -72,10 +72,10 @@ reboot_system() {
 # Основная программа
 main() {
     check_root
-    install_anydesk
+#    install_anydesk
     configure_gdm
     configure_display_access
-    configure_firewall
+#    configure_firewall
     reboot_system
 }
 
