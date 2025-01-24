@@ -1,5 +1,23 @@
 #!/bin/bash
+echo "
+ SSSSSSS  EEEEEEE  RRRRRR   HHH   HHH IIIIIIII IIIIIIII
+ SSS      EEE      RRR  RR  HHH   HHH    III     III
+ SSSSSS   EEEEE    RRRRRR   HHHHHHHHH    III     III
+     SSS  EEE      RRR  RR  HHH   HHH    III     III
+ SSSSSSS  EEEEEEE  RRR   RR HHH   HHH IIIIIIII IIIIIIII
 
+ SSSSSSS  HHH   HHH YYY   YYY PPPPPP   YYY   YYY LLL      OOOOOOO  VVV     VVV
+ SSS      HHH   HHH  YYY YYY  PPP  PP   YYY YYY  LLL      OOO OOO   VVV   VVV
+ SSSSSS   HHHHHHHHH   YYYYY   PPPPPP     YYYYY   LLL      OOO OOO    VVV VVV
+     SSS  HHH   HHH    YYY    PPP        YYY     LLL      OOO OOO     VVVV
+ SSSSSSS  HHH   HHH    YYY    PPP        YYY     LLLLLLL  OOOOOOO      VV
+
+      11   iii tttttttt      pppppp  rrrrrrr   ooooooo
+      11         ttt         pp   pp rr   rr  oo     oo
+      11   iii   ttt   ..... pppppp  rr  rrr  oo     oo
+      11   iii   ttt         pp      rr   rr  oo     oo
+      11   iii   ttt         pp      rr    rr  ooooooo
+"
 # Скрипт для настройки AnyDesk на Ubuntu 22.04
 # Отключает Wayland, настраивает автологин и перезагружает систему
 
